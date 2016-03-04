@@ -15,11 +15,9 @@ while stp==0; do
 		fi
 	fi
 	if [ $ping_err -eq 0 ]  ; then
-		#echo "c3 =" $count
 		count=0
-		#echo "c2 =" $count
 	fi
-	#echo "c=" $count
+	
 	/bin/sleep 0.1
-	#echo "------"
+	
 done
