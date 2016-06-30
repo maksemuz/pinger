@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 stp=0
-count=0
+count=0		# count of lost ICMP packets
 wait=2		# seconds to wait
 pcount=6 	# ping counts
 while stp==0; do
