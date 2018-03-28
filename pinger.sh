@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 stp=0
-count=0		# count of lost ICMP packets
-wait=2		# seconds to wait
-pcount=6 	# ping counts
+count=0			# count of lost ICMP packets
+wait=2			# seconds to wait
+pcount=6 		# ping counts
+target='127.0.0.1' 	#target to ping, usually default gateway
 while stp==0; do
-	/sbin/ping -q -c 1 -W 10 192.168.13.1 > /dev/null
+	/sbin/ping -q -c 1 -W 10 $target > /dev/null
 	ping_err=$?
 	if [ $ping_err -ne 0 ]  ; then
 		count=$[$count+1]
