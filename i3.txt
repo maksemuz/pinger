@@ -1,0 +1,1 @@
+yum -y install epel-release lightdm i3 i3status rxvt* vlc qpdfview i3lock dmenu thunderbird firefox python34 pulseaudio* pulsemixer pavucontrol gcc libevent xbacklight alsa-utils
